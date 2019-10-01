@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name locallib)(type KiCad)(uri C:/Users/sggan/KiCad/Projects/Voyager65/locallib.pretty)(options "")(descr ""))
+  (lib (name keyboard_parts)(type KiCad)(uri C:/Users/sggan/KiCad/Projects/Voyager65/keyboard_parts.pretty)(options "")(descr ""))
+  (lib (name Type-C)(type KiCad)(uri /Users/sriram/KiCadLibs/Type-C.pretty)(options "")(descr ""))
+)
