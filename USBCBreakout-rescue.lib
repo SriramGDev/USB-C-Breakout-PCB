@@ -1,65 +1,53 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# 78171-0004-78171-0004
+# +5V-keyboard_parts
 #
-DEF 78171-0004-78171-0004 J 0 30 Y Y 1 F N
-F0 "J" 850 300 50 H V L CNN
-F1 "78171-0004-78171-0004" 850 200 50 H V L CNN
-F2 "781710004" 850 100 50 H I L CNN
-F3 "https://www.molex.com/pdm_docs/sd/781710004_sd.pdf" 850 0 50 H I L CNN
-F4 "Molex PICO-EZMATE 78171, 1.2mm Pitch, 4 Way, 1 Row, Straight PCB Header, Surface Mount" 850 -100 50 H I L CNN "Description"
-F5 "1.6" 850 -200 50 H I L CNN "Height"
-F6 "Molex" 850 -300 50 H I L CNN "Manufacturer_Name"
-F7 "78171-0004" 850 -400 50 H I L CNN "Manufacturer_Part_Number"
-F8 "538-78171-0004" 850 -500 50 H I L CNN "Mouser Part Number"
-F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=538-78171-0004" 850 -600 50 H I L CNN "Mouser Price/Stock"
-F10 "7000833P" 850 -700 50 H I L CNN "RS Part Number"
-F11 "http://uk.rs-online.com/web/p/products/7000833P" 850 -800 50 H I L CNN "RS Price/Stock"
-F12 "70372740" 850 -900 50 H I L CNN "Allied_Number"
-F13 "https://www.alliedelec.com/molex-incorporated-78171-0004/70372740/" 850 -1000 50 H I L CNN "Allied Price/Stock"
+DEF +5V-keyboard_parts #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -30 20 H I C CNN
+F1 "+5V-keyboard_parts" 0 110 30 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
 DRAW
-P 5 0 1 6 200 100 800 100 800 -300 200 -300 200 100 N
-X 1 1 0 0 200 R 50 50 0 0 B
-X 2 2 1000 0 200 L 50 50 0 0 B
-X 3 3 0 -100 200 R 50 50 0 0 B
-X 4 4 1000 -100 200 L 50 50 0 0 B
-X MP1 MP1 0 -200 200 R 50 50 0 0 B
-X MP2 MP2 1000 -200 200 L 50 50 0 0 B
+C 0 60 20 0 1 0 N
+P 3 0 1 0 0 0 0 40 0 40 N
+X +5V 1 0 0 0 U 10 20 0 0 W N
 ENDDRAW
 ENDDEF
 #
-# HRO-TYPE-C-31-M-12-Voyager65-rescue
+# Conn_01x04-Connector
 #
-DEF HRO-TYPE-C-31-M-12-Voyager65-rescue USB 0 40 Y Y 1 F N
-F0 "USB" -200 650 60 H V C CNN
-F1 "HRO-TYPE-C-31-M-12-Voyager65-rescue" -400 -50 60 V V C CNN
-F2 "" 0 0 60 H I C CNN
-F3 "" 0 0 60 H I C CNN
+DEF Conn_01x04-Connector J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Conn_01x04-Connector" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
 DRAW
-S -450 600 -350 -700 0 1 0 f
-S 0 -700 -350 600 0 1 0 f
-X GND 1 100 550 100 L 50 50 1 1 I
-X CC2 10 100 -350 100 L 50 50 1 1 I
-X VBUS 11 100 -450 100 L 50 50 1 1 I
-X GND 12 100 -550 100 L 50 50 1 1 I
-X SHIELD 13 100 -650 100 L 50 50 1 1 I
-X VBUS 2 100 450 100 L 50 50 1 1 I
-X SBU2 3 100 350 100 L 50 50 1 1 I
-X CC1 4 100 250 100 L 50 50 1 1 I
-X DN2 5 100 150 100 L 50 50 1 1 I
-X DP1 6 100 50 100 L 50 50 1 1 I
-X DN1 7 100 -50 100 L 50 50 1 1 I
-X DP2 8 100 -150 100 L 50 50 1 1 I
-X SBU1 9 100 -250 100 L 50 50 1 1 I
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -250 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# PRTR5V0U2X-ai03-locallib
+# PRTR5V0U2X-ai03-locallib-KRWNBreakout-rescue
 #
-DEF PRTR5V0U2X-ai03-locallib U 0 40 Y Y 1 F N
+DEF PRTR5V0U2X-ai03-locallib-KRWNBreakout-rescue U 0 40 Y Y 1 F N
 F0 "U" 0 150 60 H V C CNN
-F1 "PRTR5V0U2X-ai03-locallib" 0 -150 60 H V C CNN
+F1 "PRTR5V0U2X-ai03-locallib-KRWNBreakout-rescue" 0 -150 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -71,11 +59,11 @@ X VCC 4 300 50 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Polyfuse_Small-Device
+# Polyfuse_Small-Device-KRWNBreakout-rescue
 #
-DEF Polyfuse_Small-Device F 0 0 N Y 1 F N
+DEF Polyfuse_Small-Device-KRWNBreakout-rescue F 0 0 N Y 1 F N
 F0 "F" -75 0 50 V V C CNN
-F1 "Polyfuse_Small-Device" 75 0 50 V V C CNN
+F1 "Polyfuse_Small-Device-KRWNBreakout-rescue" 75 0 50 V V C CNN
 F2 "" 50 -200 50 H I L CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -91,11 +79,11 @@ X ~ 2 0 -100 25 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# R_Small-Device
+# R_Small-Device-KRWNBreakout-rescue
 #
-DEF R_Small-Device R 0 10 N N 1 F N
+DEF R_Small-Device-KRWNBreakout-rescue R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "R_Small-Device" 30 -40 50 H V L CNN
+F1 "R_Small-Device-KRWNBreakout-rescue" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -105,6 +93,48 @@ DRAW
 S -30 70 30 -70 0 1 8 N
 X ~ 1 0 100 30 D 50 50 1 1 P
 X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Wurth-632723300011-Type-C
+#
+DEF Wurth-632723300011-Type-C USB 0 40 Y Y 1 F N
+F0 "USB" -650 0 60 V V C CNN
+F1 "Wurth-632723300011-Type-C" -550 0 60 V V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -400 0 0 -1200 0 1 0 f
+S -400 1200 -800 -1200 0 1 0 f
+S 0 -1200 -800 -1500 0 1 0 f
+S 0 0 -400 1200 0 1 0 f
+X GND 1 100 1150 100 L 50 50 1 1 I
+X SSRXn2 10 100 250 100 L 50 50 1 1 I
+X SSRXp2 11 100 150 100 L 50 50 1 1 I
+X GND 12 100 50 100 L 50 50 1 1 I
+X GND 13 100 -50 100 L 50 50 1 1 I
+X SSTXp2 14 100 -150 100 L 50 50 1 1 I
+X SSTXn2 15 100 -250 100 L 50 50 1 1 I
+X VBUS 16 100 -350 100 L 50 50 1 1 I
+X CC2 17 100 -450 100 L 50 50 1 1 I
+X Dp2 18 100 -550 100 L 50 50 1 1 I
+X Dn2 19 100 -650 100 L 50 50 1 1 I
+X SSTXXp1 2 100 1050 100 L 50 50 1 1 I
+X SBU2 20 100 -750 100 L 50 50 1 1 I
+X VBUS 21 100 -850 100 L 50 50 1 1 I
+X SSRXn1 22 100 -950 100 L 50 50 1 1 I
+X SSRXp1 23 100 -1050 100 L 50 50 1 1 I
+X GND 24 100 -1150 100 L 50 50 1 1 I
+X Center_Plate_Pin 25 100 -1250 100 L 50 50 1 1 I
+X Connector_Legs 26 100 -1350 100 L 50 50 1 1 I
+X Under-Barrel_Pads 27 100 -1450 100 L 50 50 1 1 I
+X SSTXn1 3 100 950 100 L 50 50 1 1 I
+X VBUS 4 100 850 100 L 50 50 1 1 I
+X CC1 5 100 750 100 L 50 50 1 1 I
+X Dp1 6 100 650 100 L 50 50 1 1 I
+X Dn1 7 100 550 100 L 50 50 1 1 I
+X SBU1 8 100 450 100 L 50 50 1 1 I
+X VBUS 9 100 350 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #

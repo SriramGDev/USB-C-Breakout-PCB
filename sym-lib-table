@@ -4,4 +4,5 @@
   (lib (name logic)(type Legacy)(uri C:/Users/sggan/KiCad/Projects/Voyager65/logic.lib)(options "")(descr ""))
   (lib (name ai03-locallib)(type Legacy)(uri C:/Users/sggan/KiCad/Projects/Voyager65/locallib.pretty/schema/ai03-locallib.lib)(options "")(descr ""))
   (lib (name KRWNBreakout-rescue)(type Legacy)(uri ${KIPRJMOD}/KRWNBreakout-rescue.lib)(options "")(descr ""))
+  (lib (name USBCBreakout-rescue)(type Legacy)(uri ${KIPRJMOD}/USBCBreakout-rescue.lib)(options "")(descr ""))
 )
