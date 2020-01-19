@@ -1,7 +1,0 @@
-"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
-1;"USB1";"Wurth-632723300011";1;"Wurth-632723300011";;;
-2;"F1";"Fuse_SMD1206_Reflow";1;"500mA";;;
-3;"R1,R2";"R_0805_HandSoldering";2;"5.1k";;;
-4;"REF**,REF**";"MountingHole_2.2mm_M2_Pad";2;"MountingHole_2.2mm_M2_Pad";;;
-5;"J1";"Molex_PicoBlade_53048-0410_04x1.25mm_Angled";1;"Conn_01x04";;;
-6;"U1";"SOT143B";1;"PRTR5V0U2X-ai03-locallib";;;
